@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* horizontal lines */
+.hr::before,
+.hr::after {
+    content: '';
+    border: 1px solid rgba(204, 204, 204, 0.89);
+}
+
+.hr {
+    display: flex;
+    align-items: center;
+}
+
+.hr::before,
+.hr::after {
+    flex-grow: 1;
+    margin: 0 40px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    min-width: 500px;
+}
+
+.social button {
+    display: flex;
+    align-items: center;
+    min-width: 400px;
+    min-height: 40px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.social-inner {
+    margin-right: 20px;
+    font-family: 'Poppins',
+    sans-serif;
+    font-weight: 600;
+}
+
+.fa-facebook {
+    margin-left: 4px;
+    color: #3B5998;
+    font-size: 28px;
+}
+
+.google-icon {
+    margin-left: 2px;
+    max-width: 28px;
+    height: 28px;
+}
