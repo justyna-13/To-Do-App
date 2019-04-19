@@ -6,24 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link href="../public/assets/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
     <title>To Do App</title>
+    <!-- <style>
+        button {
+            color: blue;
+        }
+    </style> -->
 </head>
 
 <body>
     <article class="blue-grey lighten-5 center-align">
         <div class="container white">
             <header>
-                <i>ikona</i>
-                <h1>ToDoApp</h1>
+                <a href="#" class="header">
+                    <img src="../public/main_icon.jpg" width="80px" height="80px" alt="main_icon">
+                    <h1>ToDoApp</h1>
+                </a>
             </header>
             <main class="container">
                 <div class="social ">
                     <button>
-                        Log in with Google Account
+                        <div class="social-inner">
+                            <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="google-icon">
+                        </div>
+                        <div class="social-inner">
+                            Log in with Google Account
+                        </div>
                     </button>
                     <button>
-                        Log in with Facebook Account
+                        <div class="social-inner">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="social-inner">
+                            Log in with Facbook Account
+                        </div>
                     </button>
                 </div>
                 <p class="hr">or</p>
