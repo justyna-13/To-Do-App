@@ -13,12 +13,14 @@ body {
 .hr {
     display: flex;
     align-items: center;
+    opacity: 0.6;
+    font-style: bold;
 }
 
 .hr::before,
 .hr::after {
     flex-grow: 1;
-    margin: 0 40px;
+    margin: 0 10px;
 }
 
 .header {
@@ -55,6 +57,10 @@ h1 {
     box-shadow:0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.social button:hover{
+    background-color: rgb(224, 224, 224);
+}
+
 .social-inner {
     margin-right: 20px;
     font-family: 'Poppins',
@@ -72,4 +78,54 @@ h1 {
     margin-left: 2px;
     max-width: 28px;
     height: 28px;
+}
+
+.login-data {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    min-width: 500px;
+}
+input {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: black;
+    opacity: 0.8;
+}
+
+.login-button button {
+    margin: 20px;
+    padding: 9px;
+    width: 400px;
+    background-color: #ff6d24;
+    font-family: 'Poppins',
+    sans-serif;
+    font-weight: 600;
+    border: 0px solid transparent;
+    border-radius: 5px;
+}
+.login-button button:hover {
+    background-color: #d15d22;
+}
+#login-text {
+    color: white;
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    min-width: 500px;
+    font-weight: 500;
+    color: black;
+}
+
+.paragraphs div{
+    margin: 6px;
 }
