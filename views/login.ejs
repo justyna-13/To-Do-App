@@ -47,17 +47,22 @@
                     </button>
                 </div>
                 <p class="hr">OR</p>
-                <div class="login-data">
-                    <input type="text" class="browser-default" placeholder="&#xf0e0;   Login"
-                        style="font-family:Arial, FontAwesome" />
-                    <input type="text" class="browser-default" placeholder="&#xf023;   Password"
-                        style="font-family:Arial, FontAwesome" />
-                    <div class="login-button">
-                        <button>
+                <% include ./partials/msg %>
+
+                <form action="/users/login" method="POST">
+                    <div class="login-data">
+                        <input name="email" type="email" class="browser-default" placeholder="&#xf0e0;   Email"
+                            style="font-family:Arial, FontAwesome" />
+                        <input name="password" type="password" class="browser-default" placeholder="&#xf023;   Password"
+                            style="font-family:Arial, FontAwesome" />
+                        <div class="login-button">
+                            <button id="login-text" type="submit" class="">Login</button>
+                            <!-- <button>
                             <div id="login-text">Log in</div>
-                        </button>
+                        </button> -->
                         </div>
-                </div>
+                    </div>
+                </form>
                 <div class="paragraphs">
                     <div>
                         <a href="#">
@@ -65,18 +70,18 @@
                         </a>
                     </div>
                     <div>
-                        Need additional help? 
+                        Need additional help?
                         <a href="#">
                             <font color="#ff6d24">Contact ToDoApp Support</font>
                         </a>
                     </div>
                     <div>
                         Sign up in seconds
-                        <a href="#">
+                        <a href="/users/register">
                             <font color="#ff6d24">Sign up in seconds</font>
                         </a>
                     </div>
-                    
+
                 </div>
             </main>
         </div>
