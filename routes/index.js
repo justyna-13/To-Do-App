@@ -42,7 +42,6 @@ router.post('/addtask', (req, res) => {
 })
 
 router.post('/removetask', (req, res) => {
-    console.log(req.body.removetask)
     Todo.findByIdAndRemove(req.body.removetask, (err, task) => {
         if(err)
             console.log(err)
